@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="39756b71dbbf4c1fa12261a479aa7272" Name="Diagram1">
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Arbitro" Width="1.5" PointX="3" PointY="67.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.ArbitroPartido" Width="1.5" PointX="5.25" PointY="100.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.ArbitroTipoArbitro" Width="1.5" PointX="5.25" PointY="118.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Articulo" Width="1.5" PointX="3" PointY="71.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Asentamiento" Width="1.5" PointX="3" PointY="75.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.AsentamientoTipoAsentamiento" Width="1.5" PointX="5.25" PointY="124.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Boleto" Width="1.5" PointX="10.5" PointY="150.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Campo" Width="1.5" PointX="8.25" PointY="101.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Ciudad" Width="1.5" PointX="8" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Cliente" Width="1.5" PointX="3" PointY="84.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.ClienteMembresia" Width="1.5" PointX="23" PointY="109.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Contrato" Width="1.5" PointX="3" PointY="88.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Dorsal" Width="1.5" PointX="3" PointY="93" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Empleado" Width="1.5" PointX="8" PointY="114.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EmpleadoEstadio" Width="1.5" PointX="12.5" PointY="122.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EmpleadoTipoEmpleado" Width="1.5" PointX="10.25" PointY="141" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Entrenamiento" Width="1.5" PointX="3" PointY="101.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EntrenamientoHerramienta" Width="1.5" PointX="10.25" PointY="121.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EntrenamientoMaquina" Width="1.5" PointX="13.25" PointY="117.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EntrenamientoTipoEntrenamiento" Width="1.5" PointX="5.25" PointY="141.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Equipo" Width="1.5" PointX="8" PointY="124.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EquipoFichaje" Width="1.5" PointX="23.75" PointY="124.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EquipoPrestamoJugador" Width="1.5" PointX="26.75" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EquipoTrofeo" Width="1.5" PointX="10.25" PointY="145.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Estadio" Width="1.5" PointX="8.25" PointY="107" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Estadistica" Width="1.5" PointX="3" PointY="112.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.EstadisticaTemporada" Width="1.5" PointX="19.25" PointY="128.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Estado" Width="1.5" PointX="5.25" PointY="129.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Fichaje" Width="1.5" PointX="18.5" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Gimnasio" Width="1.5" PointX="5.25" PointY="109.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Herramienta" Width="1.5" PointX="3" PointY="120.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.HerramientaCampo" Width="1.5" PointX="12.5" PointY="113.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Hotel" Width="1.5" PointX="11.25" PointY="98.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.HotelSucursal" Width="1.5" PointX="13.5" PointY="131.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Jersey" Width="1.5" PointX="15.25" PointY="109.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Jugador" Width="1.5" PointX="10.25" PointY="114.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.JugadorEntrenamiento" Width="1.5" PointX="18.5" PointY="123.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.JugadorPartido" Width="1.5" PointX="23.75" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.JugadorPremio" Width="1.5" PointX="12.5" PointY="136.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Liga" Width="1.5" PointX="8.25" PointY="131.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Manager" Width="1.5" PointX="3" PointY="129.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Maquina" Width="1.5" PointX="3" PointY="133.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.MaquinaGimnasio" Width="1.5" PointX="10.5" PointY="127.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Marca" Width="1.5" PointX="3" PointY="137.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.MarcaJersey" Width="1.5" PointX="23.5" PointY="115.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.MedioTransporte" Width="1.5" PointX="3" PointY="141.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Membresia" Width="1.5" PointX="20.75" PointY="114.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Nacionalidad" Width="1.5" PointX="3" PointY="145.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Pais" Width="1.5" PointX="3" PointY="149.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Palco" Width="1.5" PointX="15.5" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Partido" Width="1.5" PointX="15.5" PointY="123.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.PartidoPatrocinador" Width="1.5" PointX="18.75" PointY="133.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.PartidoTipoPartido" Width="1.5" PointX="17.75" PointY="145" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Patrocinador" Width="1.5" PointX="3" PointY="153.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Posicion" Width="1.5" PointX="3" PointY="157.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.PosicionJugador" Width="1.5" PointX="16.5" PointY="131.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Premio" Width="1.5" PointX="3" PointY="161.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.PremioTipoPremio" Width="1.5" PointX="5.25" PointY="146.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Presidente" Width="1.5" PointX="18.25" PointY="109.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.PrestamoJugador" Width="1.5" PointX="21.5" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Sucursal" Width="1.5" PointX="3" PointY="165.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Temporada" Width="1.5" PointX="20.5" PointY="109.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TemporadaEstadisticaTemporada" Width="1.5" PointX="25.75" PointY="114.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TipoArbitro" Width="1.5" PointX="3" PointY="169" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TipoAsentamiento" Width="1.5" PointX="3" PointY="173" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TipoEmpleado" Width="1.5" PointX="3" PointY="176.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TipoEntrenamiento" Width="1.5" PointX="3" PointY="180.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TipoPartido" Width="1.5" PointX="3" PointY="184.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.TipoPremio" Width="1.5" PointX="3" PointY="188.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Trofeo" Width="1.5" PointX="3" PointY="192.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Usuario" Width="1.5" PointX="0.75" PointY="105.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Venta" Width="1.5" PointX="18.5" PointY="114.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.VentaArticulo" Width="1.5" PointX="5.25" PointY="105" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Viaje" Width="1.5" PointX="15.5" PointY="114.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.ViajeMedioTransporte" Width="1.5" PointX="20.75" PointY="124.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoFutbolModel.Zona" Width="1.5" PointX="3" PointY="196.25" IsExpanded="true" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroPartidoArbitro" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroTipoArbitroArbitro" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroPartidoPartido" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroPartidoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroPartidoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroTipoArbitroTipoArbitro" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroTipoArbitroUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArbitroTipoArbitroUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArticuloUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKArticuloUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaArticuloArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKAsentamientoTipoAsentamientoAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKAsentamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKAsentamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKCampoAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadioAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKGimnasioAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKAsentamientoTipoAsentamientoTipoAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKAsentamientoTipoAsentamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKAsentamientoTipoAsentamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKBoletoEstadio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKBoletoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKBoletoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKBoletoZona" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKCampoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKCampoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHerramientaCampoCampo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKCiudadEstado" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKCiudadUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKCiudadUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadioCiudad" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKClienteMembresiaCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKClienteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKClienteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKClienteMembresiaMembresia" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKClienteMembresiaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKClienteMembresiaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKContratoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKContratoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorContrato" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKDorsalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKDorsalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorDorsal" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoEstadioEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoTipoEmpleadoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoEstadioEstadio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoEstadioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoEstadioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoTipoEmpleadoTipoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoTipoEmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEmpleadoTipoEmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoHerramientaEntrenamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoMaquinaEntrenamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoTipoEntrenamientoEntrenamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorEntrenamientoEntrenamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoHerramientaHerramienta" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoHerramientaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoHerramientaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoMaquinaMaquina" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoMaquinaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoMaquinaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoTipoEntrenamientoTipoEntrenamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoTipoEntrenamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEntrenamientoTipoEntrenamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoFichajeEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoLiga" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoPrestamoJugadorEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoTrofeoEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadisticaTemporadaEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJerseyEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoEquipoLocal" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoEquipoVisitante" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPresidenteEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeEquipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoFichajeFichaje" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoFichajeUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoFichajeUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoPrestamoJugadorPrestamoJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoPrestamoJugadorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoPrestamoJugadorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoTrofeoTrofeo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoTrofeoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEquipoTrofeoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPalcoEstadio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoEstadio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaEstadio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadisticaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadisticaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoEstadistica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadisticaTemporadaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadisticaTemporadaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaEstadisticaTemporadaEstadisticaTemporada" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadoPais" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKEstadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKFichajeJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKFichajeUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKFichajeUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKGimnasioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKGimnasioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMaquinaGimnasioGimnasio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHerramientaCampoHerramienta" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHerramientaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHerramientaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHerramientaCampoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHerramientaCampoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelSucursalHotel" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeHotel" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelSucursalSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelSucursalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKHotelSucursalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJerseyUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJerseyUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMarcaJerseyJersey" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorEntrenamientoJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorManager" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorNacionalidad" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPartidoJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPremioJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPosicionJugadorJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPrestamoJugadorJugador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorEntrenamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorEntrenamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPartidoPartido" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPartidoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPartidoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPremioPremio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPremioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKJugadorPremioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKLigaPais" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKLigaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKLigaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaLiga" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKManagerUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKManagerUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMaquinaGimnasioMaquina" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMaquinaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMaquinaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMaquinaGimnasioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMaquinaGimnasioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMarcaJerseyMarca" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMarcaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMarcaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMarcaJerseyUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMarcaJerseyUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMedioTransporteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMedioTransporteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeMedioTransporteMedioTransporte" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMembresiaPalco" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMembresiaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKMembresiaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKNacionalidadUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKNacionalidadUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPaisUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPaisUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPalcoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPalcoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoPatrocinadorPartido" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoTipoPartidoPartido" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoPatrocinadorPatrocinador" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoPatrocinadorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoPatrocinadorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoTipoPartidoTipoPartido" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoTipoPartidoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPartidoTipoPartidoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPatrocinadorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPatrocinadorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPosicionJugadorPosicion" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPosicionUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPosicionUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPosicionJugadorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPosicionJugadorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPremioTipoPremioPremio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPremioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPremioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPremioTipoPremioTipoPremio" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPremioTipoPremioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPremioTipoPremioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPresidenteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPresidenteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPrestamoJugadorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKPrestamoJugadorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKSucursalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKSucursalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaEstadisticaTemporadaTemporada" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaEstadisticaTemporadaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTemporadaEstadisticaTemporadaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoArbitroUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoArbitroUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoAsentamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoAsentamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoEmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoEmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoEntrenamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoEntrenamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoPartidoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoPartidoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoPremioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTipoPremioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTrofeoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKTrofeoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaArticuloUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaArticuloUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeMedioTransporteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeMedioTransporteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKZonaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKZonaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKVentaArticuloVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoFutbolModel.FKViajeMedioTransporteViaje" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

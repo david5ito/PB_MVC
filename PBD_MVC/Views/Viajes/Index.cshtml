@@ -1,0 +1,87 @@
+﻿@model IEnumerable<PBD_MVC.Models.Viaje>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ciudadSalida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ciudadDestino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaCrea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaModifica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipo.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hotel.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario1.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ciudadSalida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ciudadDestino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaCrea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaModifica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Equipo.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hotel.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario1.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idViaje }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idViaje }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idViaje })
+        </td>
+    </tr>
+}
+
+</table>

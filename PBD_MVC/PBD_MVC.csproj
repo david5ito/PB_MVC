@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AABEF572-667C-4695-B2E0-E3FCB84C3077}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PBD_MVC</RootNamespace>
+    <AssemblyName>PBD_MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArbitroesController.cs" />
+    <Compile Include="Controllers\ArbitroPartidoesController.cs" />
+    <Compile Include="Controllers\ArbitroTipoArbitroesController.cs" />
+    <Compile Include="Controllers\ArticuloesController.cs" />
+    <Compile Include="Controllers\AsentamientoesController.cs" />
+    <Compile Include="Controllers\AsentamientoTipoAsentamientoesController.cs" />
+    <Compile Include="Controllers\BoletoesController.cs" />
+    <Compile Include="Controllers\CampoesController.cs" />
+    <Compile Include="Controllers\CiudadsController.cs" />
+    <Compile Include="Controllers\ClienteMembresiasController.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\ContratoesController.cs" />
+    <Compile Include="Controllers\DorsalsController.cs" />
+    <Compile Include="Controllers\EmpleadoesController.cs" />
+    <Compile Include="Controllers\EmpleadoEstadiosController.cs" />
+    <Compile Include="Controllers\EmpleadoTipoEmpleadoesController.cs" />
+    <Compile Include="Controllers\EntrenamientoesController.cs" />
+    <Compile Include="Controllers\EntrenamientoHerramientasController.cs" />
+    <Compile Include="Controllers\EntrenamientoMaquinasController.cs" />
+    <Compile Include="Controllers\EntrenamientoTipoEntrenamientoesController.cs" />
+    <Compile Include="Controllers\EquipoesController.cs" />
+    <Compile Include="Controllers\EquipoFichajesController.cs" />
+    <Compile Include="Controllers\EquipoPrestamoJugadorsController.cs" />
+    <Compile Include="Controllers\EquipoTrofeosController.cs" />
+    <Compile Include="Controllers\EstadiosController.cs" />
+    <Compile Include="Controllers\EstadisticasController.cs" />
+    <Compile Include="Controllers\EstadisticaTemporadasController.cs" />
+    <Compile Include="Controllers\EstadoesController.cs" />
+    <Compile Include="Controllers\FichajesController.cs" />
+    <Compile Include="Controllers\GimnasiosController.cs" />
+    <Compile Include="Controllers\HerramientaCampoesController.cs" />
+    <Compile Include="Controllers\HerramientasController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HotelsController.cs" />
+    <Compile Include="Controllers\HotelSucursalsController.cs" />
+    <Compile Include="Controllers\JerseysController.cs" />
+    <Compile Include="Controllers\JugadorEntrenamientoesController.cs" />
+    <Compile Include="Controllers\JugadorPartidoesController.cs" />
+    <Compile Include="Controllers\JugadorPremiosController.cs" />
+    <Compile Include="Controllers\JugadorsController.cs" />
+    <Compile Include="Controllers\LigasController.cs" />
+    <Compile Include="Controllers\ManagersController.cs" />
+    <Compile Include="Controllers\MaquinaGimnasiosController.cs" />
+    <Compile Include="Controllers\MaquinasController.cs" />
+    <Compile Include="Controllers\MarcaJerseysController.cs" />
+    <Compile Include="Controllers\MarcasController.cs" />
+    <Compile Include="Controllers\MedioTransportesController.cs" />
+    <Compile Include="Controllers\MembresiasController.cs" />
+    <Compile Include="Controllers\NacionalidadsController.cs" />
+    <Compile Include="Controllers\PaisController.cs" />
+    <Compile Include="Controllers\PalcoesController.cs" />
+    <Compile Include="Controllers\PartidoesController.cs" />
+    <Compile Include="Controllers\PartidoPatrocinadorsController.cs" />
+    <Compile Include="Controllers\PartidoTipoPartidoesController.cs" />
+    <Compile Include="Controllers\PatrocinadorsController.cs" />
+    <Compile Include="Controllers\PosicionJugadorsController.cs" />
+    <Compile Include="Controllers\PosicionsController.cs" />
+    <Compile Include="Controllers\PremiosController.cs" />
+    <Compile Include="Controllers\PremioTipoPremiosController.cs" />
+    <Compile Include="Controllers\PresidentesController.cs" />
+    <Compile Include="Controllers\PrestamoJugadorsController.cs" />
+    <Compile Include="Controllers\SucursalsController.cs" />
+    <Compile Include="Controllers\TemporadaEstadisticaTemporadasController.cs" />
+    <Compile Include="Controllers\TemporadasController.cs" />
+    <Compile Include="Controllers\TipoArbitroesController.cs" />
+    <Compile Include="Controllers\TipoAsentamientoesController.cs" />
+    <Compile Include="Controllers\TipoEmpleadoesController.cs" />
+    <Compile Include="Controllers\TipoEntrenamientoesController.cs" />
+    <Compile Include="Controllers\TipoPartidoesController.cs" />
+    <Compile Include="Controllers\TipoPremiosController.cs" />
+    <Compile Include="Controllers\TrofeosController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Controllers\VentaArticuloesController.cs" />
+    <Compile Include="Controllers\VentasController.cs" />
+    <Compile Include="Controllers\ViajeMedioTransportesController.cs" />
+    <Compile Include="Controllers\ViajesController.cs" />
+    <Compile Include="Controllers\ZonasController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Arbitro.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ArbitroPartido.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ArbitroTipoArbitro.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Articulo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Asentamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AsentamientoTipoAsentamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Boleto.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Campo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ciudad.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cliente.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ClienteMembresia.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contrato.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Dorsal.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Empleado.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmpleadoEstadio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmpleadoTipoEmpleado.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entrenamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntrenamientoHerramienta.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntrenamientoMaquina.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntrenamientoTipoEntrenamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Equipo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EquipoFichaje.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EquipoPrestamoJugador.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EquipoTrofeo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estadio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estadistica.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EstadisticaTemporada.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estado.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fichaje.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Gimnasio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Herramienta.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HerramientaCampo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Hotel.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HotelSucursal.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Jersey.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Jugador.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JugadorEntrenamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JugadorPartido.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JugadorPremio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Liga.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Manager.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Maquina.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MaquinaGimnasio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Marca.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MarcaJersey.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedioTransporte.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Membresia.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Nacionalidad.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pais.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Palco.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Partido.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PartidoPatrocinador.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PartidoTipoPartido.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Patrocinador.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Posicion.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PosicionJugador.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Premio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PremioTipoPremio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Presidente.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrestamoJugador.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProyectoFutbol.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoFutbol.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProyectoFutbol.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProyectoFutbol.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoFutbol.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sucursal.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Temporada.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TemporadaEstadisticaTemporada.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoArbitro.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoAsentamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoEmpleado.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoEntrenamiento.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoPartido.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoPremio.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Trofeo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuario.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Venta.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VentaArticulo.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Viaje.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViajeMedioTransporte.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Zona.cs">
+      <DependentUpon>ProyectoFutbol.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\ProyectoFutbol.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProyectoFutbol.Context.cs</LastGenOutput>
+      <DependentUpon>ProyectoFutbol.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ProyectoFutbol.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoFutbol.edmx</DependentUpon>
+      <LastGenOutput>ProyectoFutbol.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\ProyectoFutbol.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProyectoFutbol.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ProyectoFutbol.edmx.diagram">
+      <DependentUpon>ProyectoFutbol.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Contratoes\Create.cshtml" />
+    <Content Include="Views\Contratoes\Delete.cshtml" />
+    <Content Include="Views\Contratoes\Details.cshtml" />
+    <Content Include="Views\Contratoes\Edit.cshtml" />
+    <Content Include="Views\Contratoes\Index.cshtml" />
+    <Content Include="Views\Arbitroes\Create.cshtml" />
+    <Content Include="Views\Arbitroes\Delete.cshtml" />
+    <Content Include="Views\Arbitroes\Details.cshtml" />
+    <Content Include="Views\Arbitroes\Edit.cshtml" />
+    <Content Include="Views\Arbitroes\Index.cshtml" />
+    <Content Include="Views\ArbitroPartidoes\Create.cshtml" />
+    <Content Include="Views\ArbitroPartidoes\Delete.cshtml" />
+    <Content Include="Views\ArbitroPartidoes\Details.cshtml" />
+    <Content Include="Views\ArbitroPartidoes\Edit.cshtml" />
+    <Content Include="Views\ArbitroPartidoes\Index.cshtml" />
+    <Content Include="Views\ArbitroTipoArbitroes\Create.cshtml" />
+    <Content Include="Views\ArbitroTipoArbitroes\Delete.cshtml" />
+    <Content Include="Views\ArbitroTipoArbitroes\Details.cshtml" />
+    <Content Include="Views\ArbitroTipoArbitroes\Edit.cshtml" />
+    <Content Include="Views\ArbitroTipoArbitroes\Index.cshtml" />
+    <Content Include="Views\Articuloes\Create.cshtml" />
+    <Content Include="Views\Articuloes\Delete.cshtml" />
+    <Content Include="Views\Articuloes\Details.cshtml" />
+    <Content Include="Views\Articuloes\Edit.cshtml" />
+    <Content Include="Views\Articuloes\Index.cshtml" />
+    <Content Include="Views\Asentamientoes\Create.cshtml" />
+    <Content Include="Views\Asentamientoes\Delete.cshtml" />
+    <Content Include="Views\Asentamientoes\Details.cshtml" />
+    <Content Include="Views\Asentamientoes\Edit.cshtml" />
+    <Content Include="Views\Asentamientoes\Index.cshtml" />
+    <Content Include="Views\AsentamientoTipoAsentamientoes\Create.cshtml" />
+    <Content Include="Views\AsentamientoTipoAsentamientoes\Delete.cshtml" />
+    <Content Include="Views\AsentamientoTipoAsentamientoes\Details.cshtml" />
+    <Content Include="Views\AsentamientoTipoAsentamientoes\Edit.cshtml" />
+    <Content Include="Views\AsentamientoTipoAsentamientoes\Index.cshtml" />
+    <Content Include="Views\Boletoes\Create.cshtml" />
+    <Content Include="Views\Boletoes\Delete.cshtml" />
+    <Content Include="Views\Boletoes\Details.cshtml" />
+    <Content Include="Views\Boletoes\Edit.cshtml" />
+    <Content Include="Views\Boletoes\Index.cshtml" />
+    <Content Include="Views\Campoes\Create.cshtml" />
+    <Content Include="Views\Campoes\Delete.cshtml" />
+    <Content Include="Views\Campoes\Details.cshtml" />
+    <Content Include="Views\Campoes\Edit.cshtml" />
+    <Content Include="Views\Campoes\Index.cshtml" />
+    <Content Include="Views\Ciudads\Create.cshtml" />
+    <Content Include="Views\Ciudads\Delete.cshtml" />
+    <Content Include="Views\Ciudads\Details.cshtml" />
+    <Content Include="Views\Ciudads\Edit.cshtml" />
+    <Content Include="Views\Ciudads\Index.cshtml" />
+    <Content Include="Views\Clientes\Create.cshtml" />
+    <Content Include="Views\Clientes\Delete.cshtml" />
+    <Content Include="Views\Clientes\Details.cshtml" />
+    <Content Include="Views\Clientes\Edit.cshtml" />
+    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\ClienteMembresias\Create.cshtml" />
+    <Content Include="Views\ClienteMembresias\Delete.cshtml" />
+    <Content Include="Views\ClienteMembresias\Details.cshtml" />
+    <Content Include="Views\ClienteMembresias\Edit.cshtml" />
+    <Content Include="Views\ClienteMembresias\Index.cshtml" />
+    <Content Include="Views\Dorsals\Create.cshtml" />
+    <Content Include="Views\Dorsals\Delete.cshtml" />
+    <Content Include="Views\Dorsals\Details.cshtml" />
+    <Content Include="Views\Dorsals\Edit.cshtml" />
+    <Content Include="Views\Dorsals\Index.cshtml" />
+    <Content Include="Views\Empleadoes\Create.cshtml" />
+    <Content Include="Views\Empleadoes\Delete.cshtml" />
+    <Content Include="Views\Empleadoes\Details.cshtml" />
+    <Content Include="Views\Empleadoes\Edit.cshtml" />
+    <Content Include="Views\Empleadoes\Index.cshtml" />
+    <Content Include="Views\EmpleadoEstadios\Create.cshtml" />
+    <Content Include="Views\EmpleadoEstadios\Delete.cshtml" />
+    <Content Include="Views\EmpleadoEstadios\Details.cshtml" />
+    <Content Include="Views\EmpleadoEstadios\Edit.cshtml" />
+    <Content Include="Views\EmpleadoEstadios\Index.cshtml" />
+    <Content Include="Views\EmpleadoTipoEmpleadoes\Create.cshtml" />
+    <Content Include="Views\EmpleadoTipoEmpleadoes\Delete.cshtml" />
+    <Content Include="Views\EmpleadoTipoEmpleadoes\Details.cshtml" />
+    <Content Include="Views\EmpleadoTipoEmpleadoes\Edit.cshtml" />
+    <Content Include="Views\EmpleadoTipoEmpleadoes\Index.cshtml" />
+    <Content Include="Views\Entrenamientoes\Create.cshtml" />
+    <Content Include="Views\Entrenamientoes\Delete.cshtml" />
+    <Content Include="Views\Entrenamientoes\Details.cshtml" />
+    <Content Include="Views\Entrenamientoes\Edit.cshtml" />
+    <Content Include="Views\Entrenamientoes\Index.cshtml" />
+    <Content Include="Views\EntrenamientoHerramientas\Create.cshtml" />
+    <Content Include="Views\EntrenamientoHerramientas\Delete.cshtml" />
+    <Content Include="Views\EntrenamientoHerramientas\Details.cshtml" />
+    <Content Include="Views\EntrenamientoHerramientas\Edit.cshtml" />
+    <Content Include="Views\EntrenamientoHerramientas\Index.cshtml" />
+    <Content Include="Views\EntrenamientoMaquinas\Create.cshtml" />
+    <Content Include="Views\EntrenamientoMaquinas\Delete.cshtml" />
+    <Content Include="Views\EntrenamientoMaquinas\Details.cshtml" />
+    <Content Include="Views\EntrenamientoMaquinas\Edit.cshtml" />
+    <Content Include="Views\EntrenamientoMaquinas\Index.cshtml" />
+    <Content Include="Views\EntrenamientoTipoEntrenamientoes\Create.cshtml" />
+    <Content Include="Views\EntrenamientoTipoEntrenamientoes\Delete.cshtml" />
+    <Content Include="Views\EntrenamientoTipoEntrenamientoes\Details.cshtml" />
+    <Content Include="Views\EntrenamientoTipoEntrenamientoes\Edit.cshtml" />
+    <Content Include="Views\EntrenamientoTipoEntrenamientoes\Index.cshtml" />
+    <Content Include="Views\Equipoes\Create.cshtml" />
+    <Content Include="Views\Equipoes\Delete.cshtml" />
+    <Content Include="Views\Equipoes\Details.cshtml" />
+    <Content Include="Views\Equipoes\Edit.cshtml" />
+    <Content Include="Views\Equipoes\Index.cshtml" />
+    <Content Include="Views\EquipoFichajes\Create.cshtml" />
+    <Content Include="Views\EquipoFichajes\Delete.cshtml" />
+    <Content Include="Views\EquipoFichajes\Details.cshtml" />
+    <Content Include="Views\EquipoFichajes\Edit.cshtml" />
+    <Content Include="Views\EquipoFichajes\Index.cshtml" />
+    <Content Include="Views\EquipoPrestamoJugadors\Create.cshtml" />
+    <Content Include="Views\EquipoPrestamoJugadors\Delete.cshtml" />
+    <Content Include="Views\EquipoPrestamoJugadors\Details.cshtml" />
+    <Content Include="Views\EquipoPrestamoJugadors\Edit.cshtml" />
+    <Content Include="Views\EquipoPrestamoJugadors\Index.cshtml" />
+    <Content Include="Views\EquipoTrofeos\Create.cshtml" />
+    <Content Include="Views\EquipoTrofeos\Delete.cshtml" />
+    <Content Include="Views\EquipoTrofeos\Details.cshtml" />
+    <Content Include="Views\EquipoTrofeos\Edit.cshtml" />
+    <Content Include="Views\EquipoTrofeos\Index.cshtml" />
+    <Content Include="Views\Estadios\Create.cshtml" />
+    <Content Include="Views\Estadios\Delete.cshtml" />
+    <Content Include="Views\Estadios\Details.cshtml" />
+    <Content Include="Views\Estadios\Edit.cshtml" />
+    <Content Include="Views\Estadios\Index.cshtml" />
+    <Content Include="Views\Estadisticas\Create.cshtml" />
+    <Content Include="Views\Estadisticas\Delete.cshtml" />
+    <Content Include="Views\Estadisticas\Details.cshtml" />
+    <Content Include="Views\Estadisticas\Edit.cshtml" />
+    <Content Include="Views\Estadisticas\Index.cshtml" />
+    <Content Include="Views\EstadisticaTemporadas\Create.cshtml" />
+    <Content Include="Views\EstadisticaTemporadas\Delete.cshtml" />
+    <Content Include="Views\EstadisticaTemporadas\Details.cshtml" />
+    <Content Include="Views\EstadisticaTemporadas\Edit.cshtml" />
+    <Content Include="Views\EstadisticaTemporadas\Index.cshtml" />
+    <Content Include="Views\Estadoes\Create.cshtml" />
+    <Content Include="Views\Estadoes\Delete.cshtml" />
+    <Content Include="Views\Estadoes\Details.cshtml" />
+    <Content Include="Views\Estadoes\Edit.cshtml" />
+    <Content Include="Views\Estadoes\Index.cshtml" />
+    <Content Include="Views\Fichajes\Create.cshtml" />
+    <Content Include="Views\Fichajes\Delete.cshtml" />
+    <Content Include="Views\Fichajes\Details.cshtml" />
+    <Content Include="Views\Fichajes\Edit.cshtml" />
+    <Content Include="Views\Fichajes\Index.cshtml" />
+    <Content Include="Views\Gimnasios\Create.cshtml" />
+    <Content Include="Views\Gimnasios\Delete.cshtml" />
+    <Content Include="Views\Gimnasios\Details.cshtml" />
+    <Content Include="Views\Gimnasios\Edit.cshtml" />
+    <Content Include="Views\Gimnasios\Index.cshtml" />
+    <Content Include="Views\Herramientas\Create.cshtml" />
+    <Content Include="Views\Herramientas\Delete.cshtml" />
+    <Content Include="Views\Herramientas\Details.cshtml" />
+    <Content Include="Views\Herramientas\Edit.cshtml" />
+    <Content Include="Views\Herramientas\Index.cshtml" />
+    <Content Include="Views\HerramientaCampoes\Create.cshtml" />
+    <Content Include="Views\HerramientaCampoes\Delete.cshtml" />
+    <Content Include="Views\HerramientaCampoes\Details.cshtml" />
+    <Content Include="Views\HerramientaCampoes\Edit.cshtml" />
+    <Content Include="Views\HerramientaCampoes\Index.cshtml" />
+    <Content Include="Views\Hotels\Create.cshtml" />
+    <Content Include="Views\Hotels\Delete.cshtml" />
+    <Content Include="Views\Hotels\Details.cshtml" />
+    <Content Include="Views\Hotels\Edit.cshtml" />
+    <Content Include="Views\Hotels\Index.cshtml" />
+    <Content Include="Views\Jerseys\Create.cshtml" />
+    <Content Include="Views\Jerseys\Delete.cshtml" />
+    <Content Include="Views\Jerseys\Details.cshtml" />
+    <Content Include="Views\Jerseys\Edit.cshtml" />
+    <Content Include="Views\Jerseys\Index.cshtml" />
+    <Content Include="Views\HotelSucursals\Create.cshtml" />
+    <Content Include="Views\HotelSucursals\Delete.cshtml" />
+    <Content Include="Views\HotelSucursals\Details.cshtml" />
+    <Content Include="Views\HotelSucursals\Edit.cshtml" />
+    <Content Include="Views\HotelSucursals\Index.cshtml" />
+    <Content Include="Views\Jugadors\Create.cshtml" />
+    <Content Include="Views\Jugadors\Delete.cshtml" />
+    <Content Include="Views\Jugadors\Details.cshtml" />
+    <Content Include="Views\Jugadors\Edit.cshtml" />
+    <Content Include="Views\Jugadors\Index.cshtml" />
+    <Content Include="Views\JugadorEntrenamientoes\Create.cshtml" />
+    <Content Include="Views\JugadorEntrenamientoes\Delete.cshtml" />
+    <Content Include="Views\JugadorEntrenamientoes\Details.cshtml" />
+    <Content Include="Views\JugadorEntrenamientoes\Edit.cshtml" />
+    <Content Include="Views\JugadorEntrenamientoes\Index.cshtml" />
+    <Content Include="Views\JugadorPartidoes\Create.cshtml" />
+    <Content Include="Views\JugadorPartidoes\Delete.cshtml" />
+    <Content Include="Views\JugadorPartidoes\Details.cshtml" />
+    <Content Include="Views\JugadorPartidoes\Edit.cshtml" />
+    <Content Include="Views\JugadorPartidoes\Index.cshtml" />
+    <Content Include="Views\JugadorPremios\Create.cshtml" />
+    <Content Include="Views\JugadorPremios\Delete.cshtml" />
+    <Content Include="Views\JugadorPremios\Details.cshtml" />
+    <Content Include="Views\JugadorPremios\Edit.cshtml" />
+    <Content Include="Views\JugadorPremios\Index.cshtml" />
+    <Content Include="Views\Ligas\Create.cshtml" />
+    <Content Include="Views\Ligas\Delete.cshtml" />
+    <Content Include="Views\Ligas\Details.cshtml" />
+    <Content Include="Views\Ligas\Edit.cshtml" />
+    <Content Include="Views\Ligas\Index.cshtml" />
+    <Content Include="Views\Managers\Create.cshtml" />
+    <Content Include="Views\Managers\Delete.cshtml" />
+    <Content Include="Views\Managers\Details.cshtml" />
+    <Content Include="Views\Managers\Edit.cshtml" />
+    <Content Include="Views\Managers\Index.cshtml" />
+    <Content Include="Views\Maquinas\Create.cshtml" />
+    <Content Include="Views\Maquinas\Delete.cshtml" />
+    <Content Include="Views\Maquinas\Details.cshtml" />
+    <Content Include="Views\Maquinas\Edit.cshtml" />
+    <Content Include="Views\Maquinas\Index.cshtml" />
+    <Content Include="Views\MaquinaGimnasios\Create.cshtml" />
+    <Content Include="Views\MaquinaGimnasios\Delete.cshtml" />
+    <Content Include="Views\MaquinaGimnasios\Details.cshtml" />
+    <Content Include="Views\MaquinaGimnasios\Edit.cshtml" />
+    <Content Include="Views\MaquinaGimnasios\Index.cshtml" />
+    <Content Include="Views\Marcas\Create.cshtml" />
+    <Content Include="Views\Marcas\Delete.cshtml" />
+    <Content Include="Views\Marcas\Details.cshtml" />
+    <Content Include="Views\Marcas\Edit.cshtml" />
+    <Content Include="Views\Marcas\Index.cshtml" />
+    <Content Include="Views\MarcaJerseys\Create.cshtml" />
+    <Content Include="Views\MarcaJerseys\Delete.cshtml" />
+    <Content Include="Views\MarcaJerseys\Details.cshtml" />
+    <Content Include="Views\MarcaJerseys\Edit.cshtml" />
+    <Content Include="Views\MarcaJerseys\Index.cshtml" />
+    <Content Include="Views\MedioTransportes\Create.cshtml" />
+    <Content Include="Views\MedioTransportes\Delete.cshtml" />
+    <Content Include="Views\MedioTransportes\Details.cshtml" />
+    <Content Include="Views\MedioTransportes\Edit.cshtml" />
+    <Content Include="Views\MedioTransportes\Index.cshtml" />
+    <Content Include="Views\Membresias\Create.cshtml" />
+    <Content Include="Views\Membresias\Delete.cshtml" />
+    <Content Include="Views\Membresias\Details.cshtml" />
+    <Content Include="Views\Membresias\Edit.cshtml" />
+    <Content Include="Views\Membresias\Index.cshtml" />
+    <Content Include="Views\Nacionalidads\Create.cshtml" />
+    <Content Include="Views\Nacionalidads\Delete.cshtml" />
+    <Content Include="Views\Nacionalidads\Details.cshtml" />
+    <Content Include="Views\Nacionalidads\Edit.cshtml" />
+    <Content Include="Views\Nacionalidads\Index.cshtml" />
+    <Content Include="Views\Pais\Create.cshtml" />
+    <Content Include="Views\Pais\Delete.cshtml" />
+    <Content Include="Views\Pais\Details.cshtml" />
+    <Content Include="Views\Pais\Edit.cshtml" />
+    <Content Include="Views\Pais\Index.cshtml" />
+    <Content Include="Views\Palcoes\Create.cshtml" />
+    <Content Include="Views\Palcoes\Delete.cshtml" />
+    <Content Include="Views\Palcoes\Details.cshtml" />
+    <Content Include="Views\Palcoes\Edit.cshtml" />
+    <Content Include="Views\Palcoes\Index.cshtml" />
+    <Content Include="Views\Partidoes\Create.cshtml" />
+    <Content Include="Views\Partidoes\Delete.cshtml" />
+    <Content Include="Views\Partidoes\Details.cshtml" />
+    <Content Include="Views\Partidoes\Edit.cshtml" />
+    <Content Include="Views\Partidoes\Index.cshtml" />
+    <Content Include="Views\PartidoPatrocinadors\Create.cshtml" />
+    <Content Include="Views\PartidoPatrocinadors\Delete.cshtml" />
+    <Content Include="Views\PartidoPatrocinadors\Details.cshtml" />
+    <Content Include="Views\PartidoPatrocinadors\Edit.cshtml" />
+    <Content Include="Views\PartidoPatrocinadors\Index.cshtml" />
+    <Content Include="Views\PartidoTipoPartidoes\Create.cshtml" />
+    <Content Include="Views\PartidoTipoPartidoes\Delete.cshtml" />
+    <Content Include="Views\PartidoTipoPartidoes\Details.cshtml" />
+    <Content Include="Views\PartidoTipoPartidoes\Edit.cshtml" />
+    <Content Include="Views\PartidoTipoPartidoes\Index.cshtml" />
+    <Content Include="Views\Patrocinadors\Create.cshtml" />
+    <Content Include="Views\Patrocinadors\Delete.cshtml" />
+    <Content Include="Views\Patrocinadors\Details.cshtml" />
+    <Content Include="Views\Patrocinadors\Edit.cshtml" />
+    <Content Include="Views\Patrocinadors\Index.cshtml" />
+    <Content Include="Views\Posicions\Create.cshtml" />
+    <Content Include="Views\Posicions\Delete.cshtml" />
+    <Content Include="Views\Posicions\Details.cshtml" />
+    <Content Include="Views\Posicions\Edit.cshtml" />
+    <Content Include="Views\Posicions\Index.cshtml" />
+    <Content Include="Views\PosicionJugadors\Create.cshtml" />
+    <Content Include="Views\PosicionJugadors\Delete.cshtml" />
+    <Content Include="Views\PosicionJugadors\Details.cshtml" />
+    <Content Include="Views\PosicionJugadors\Edit.cshtml" />
+    <Content Include="Views\PosicionJugadors\Index.cshtml" />
+    <Content Include="Views\Premios\Create.cshtml" />
+    <Content Include="Views\Premios\Delete.cshtml" />
+    <Content Include="Views\Premios\Details.cshtml" />
+    <Content Include="Views\Premios\Edit.cshtml" />
+    <Content Include="Views\Premios\Index.cshtml" />
+    <Content Include="Views\PremioTipoPremios\Create.cshtml" />
+    <Content Include="Views\PremioTipoPremios\Delete.cshtml" />
+    <Content Include="Views\PremioTipoPremios\Details.cshtml" />
+    <Content Include="Views\PremioTipoPremios\Edit.cshtml" />
+    <Content Include="Views\PremioTipoPremios\Index.cshtml" />
+    <Content Include="Views\Presidentes\Create.cshtml" />
+    <Content Include="Views\Presidentes\Delete.cshtml" />
+    <Content Include="Views\Presidentes\Details.cshtml" />
+    <Content Include="Views\Presidentes\Edit.cshtml" />
+    <Content Include="Views\Presidentes\Index.cshtml" />
+    <Content Include="Views\PrestamoJugadors\Create.cshtml" />
+    <Content Include="Views\PrestamoJugadors\Delete.cshtml" />
+    <Content Include="Views\PrestamoJugadors\Details.cshtml" />
+    <Content Include="Views\PrestamoJugadors\Edit.cshtml" />
+    <Content Include="Views\PrestamoJugadors\Index.cshtml" />
+    <Content Include="Views\Sucursals\Create.cshtml" />
+    <Content Include="Views\Sucursals\Delete.cshtml" />
+    <Content Include="Views\Sucursals\Details.cshtml" />
+    <Content Include="Views\Sucursals\Edit.cshtml" />
+    <Content Include="Views\Sucursals\Index.cshtml" />
+    <Content Include="Views\Temporadas\Create.cshtml" />
+    <Content Include="Views\Temporadas\Delete.cshtml" />
+    <Content Include="Views\Temporadas\Details.cshtml" />
+    <Content Include="Views\Temporadas\Edit.cshtml" />
+    <Content Include="Views\Temporadas\Index.cshtml" />
+    <Content Include="Views\TemporadaEstadisticaTemporadas\Create.cshtml" />
+    <Content Include="Views\TemporadaEstadisticaTemporadas\Delete.cshtml" />
+    <Content Include="Views\TemporadaEstadisticaTemporadas\Details.cshtml" />
+    <Content Include="Views\TemporadaEstadisticaTemporadas\Edit.cshtml" />
+    <Content Include="Views\TemporadaEstadisticaTemporadas\Index.cshtml" />
+    <Content Include="Views\TipoArbitroes\Create.cshtml" />
+    <Content Include="Views\TipoArbitroes\Delete.cshtml" />
+    <Content Include="Views\TipoArbitroes\Details.cshtml" />
+    <Content Include="Views\TipoArbitroes\Edit.cshtml" />
+    <Content Include="Views\TipoArbitroes\Index.cshtml" />
+    <Content Include="Views\TipoAsentamientoes\Create.cshtml" />
+    <Content Include="Views\TipoAsentamientoes\Delete.cshtml" />
+    <Content Include="Views\TipoAsentamientoes\Details.cshtml" />
+    <Content Include="Views\TipoAsentamientoes\Edit.cshtml" />
+    <Content Include="Views\TipoAsentamientoes\Index.cshtml" />
+    <Content Include="Views\TipoEmpleadoes\Create.cshtml" />
+    <Content Include="Views\TipoEmpleadoes\Delete.cshtml" />
+    <Content Include="Views\TipoEmpleadoes\Details.cshtml" />
+    <Content Include="Views\TipoEmpleadoes\Edit.cshtml" />
+    <Content Include="Views\TipoEmpleadoes\Index.cshtml" />
+    <Content Include="Views\TipoEntrenamientoes\Create.cshtml" />
+    <Content Include="Views\TipoEntrenamientoes\Delete.cshtml" />
+    <Content Include="Views\TipoEntrenamientoes\Details.cshtml" />
+    <Content Include="Views\TipoEntrenamientoes\Edit.cshtml" />
+    <Content Include="Views\TipoEntrenamientoes\Index.cshtml" />
+    <Content Include="Views\TipoPartidoes\Create.cshtml" />
+    <Content Include="Views\TipoPartidoes\Delete.cshtml" />
+    <Content Include="Views\TipoPartidoes\Details.cshtml" />
+    <Content Include="Views\TipoPartidoes\Edit.cshtml" />
+    <Content Include="Views\TipoPartidoes\Index.cshtml" />
+    <Content Include="Views\TipoPremios\Create.cshtml" />
+    <Content Include="Views\TipoPremios\Delete.cshtml" />
+    <Content Include="Views\TipoPremios\Details.cshtml" />
+    <Content Include="Views\TipoPremios\Edit.cshtml" />
+    <Content Include="Views\TipoPremios\Index.cshtml" />
+    <Content Include="Views\Trofeos\Create.cshtml" />
+    <Content Include="Views\Trofeos\Delete.cshtml" />
+    <Content Include="Views\Trofeos\Details.cshtml" />
+    <Content Include="Views\Trofeos\Edit.cshtml" />
+    <Content Include="Views\Trofeos\Index.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Ventas\Create.cshtml" />
+    <Content Include="Views\Ventas\Delete.cshtml" />
+    <Content Include="Views\Ventas\Details.cshtml" />
+    <Content Include="Views\Ventas\Edit.cshtml" />
+    <Content Include="Views\Ventas\Index.cshtml" />
+    <Content Include="Views\VentaArticuloes\Create.cshtml" />
+    <Content Include="Views\VentaArticuloes\Delete.cshtml" />
+    <Content Include="Views\VentaArticuloes\Details.cshtml" />
+    <Content Include="Views\VentaArticuloes\Edit.cshtml" />
+    <Content Include="Views\VentaArticuloes\Index.cshtml" />
+    <Content Include="Views\Viajes\Create.cshtml" />
+    <Content Include="Views\Viajes\Delete.cshtml" />
+    <Content Include="Views\Viajes\Details.cshtml" />
+    <Content Include="Views\Viajes\Edit.cshtml" />
+    <Content Include="Views\Viajes\Index.cshtml" />
+    <Content Include="Views\ViajeMedioTransportes\Create.cshtml" />
+    <Content Include="Views\ViajeMedioTransportes\Delete.cshtml" />
+    <Content Include="Views\ViajeMedioTransportes\Details.cshtml" />
+    <Content Include="Views\ViajeMedioTransportes\Edit.cshtml" />
+    <Content Include="Views\ViajeMedioTransportes\Index.cshtml" />
+    <Content Include="Views\Zonas\Create.cshtml" />
+    <Content Include="Views\Zonas\Delete.cshtml" />
+    <Content Include="Views\Zonas\Details.cshtml" />
+    <Content Include="Views\Zonas\Edit.cshtml" />
+    <Content Include="Views\Zonas\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51822</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44354/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

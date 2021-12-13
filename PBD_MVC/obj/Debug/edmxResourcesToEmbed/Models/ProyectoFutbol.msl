@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProyectoFutbolModelStoreContainer" CdmEntityContainer="ProyectoFutbolEntities1">
+    <EntitySetMapping Name="Arbitro">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Arbitro">
+        <MappingFragment StoreEntitySet="Arbitro">
+          <ScalarProperty Name="idArbitro" ColumnName="idArbitro" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArbitroPartido">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.ArbitroPartido">
+        <MappingFragment StoreEntitySet="ArbitroPartido">
+          <ScalarProperty Name="idArbitroPartido" ColumnName="idArbitroPartido" />
+          <ScalarProperty Name="idArbitro" ColumnName="idArbitro" />
+          <ScalarProperty Name="idPartido" ColumnName="idPartido" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArbitroTipoArbitro">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.ArbitroTipoArbitro">
+        <MappingFragment StoreEntitySet="ArbitroTipoArbitro">
+          <ScalarProperty Name="idArbitroTipoArbitro" ColumnName="idArbitroTipoArbitro" />
+          <ScalarProperty Name="idArbitro" ColumnName="idArbitro" />
+          <ScalarProperty Name="idTipoArbitro" ColumnName="idTipoArbitro" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articulo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Articulo">
+        <MappingFragment StoreEntitySet="Articulo">
+          <ScalarProperty Name="idArticulo" ColumnName="idArticulo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asentamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Asentamiento">
+        <MappingFragment StoreEntitySet="Asentamiento">
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsentamientoTipoAsentamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.AsentamientoTipoAsentamiento">
+        <MappingFragment StoreEntitySet="AsentamientoTipoAsentamiento">
+          <ScalarProperty Name="idAsentamientoTipoAsentamiento" ColumnName="idAsentamientoTipoAsentamiento" />
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="idTipoAsentamiento" ColumnName="idTipoAsentamiento" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Boleto">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Boleto">
+        <MappingFragment StoreEntitySet="Boleto">
+          <ScalarProperty Name="idBoleto" ColumnName="idBoleto" />
+          <ScalarProperty Name="numBoleto" ColumnName="numBoleto" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="idZona" ColumnName="idZona" />
+          <ScalarProperty Name="idEstadio" ColumnName="idEstadio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Campo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Campo">
+        <MappingFragment StoreEntitySet="Campo">
+          <ScalarProperty Name="idCampo" ColumnName="idCampo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="numExterior" ColumnName="numExterior" />
+          <ScalarProperty Name="cp" ColumnName="cp" />
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciudad">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Ciudad">
+        <MappingFragment StoreEntitySet="Ciudad">
+          <ScalarProperty Name="idCiudad" ColumnName="idCiudad" />
+          <ScalarProperty Name="num" ColumnName="num" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteMembresia">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.ClienteMembresia">
+        <MappingFragment StoreEntitySet="ClienteMembresia">
+          <ScalarProperty Name="idClienteMembresia" ColumnName="idClienteMembresia" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="idMembresia" ColumnName="idMembresia" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contrato">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Contrato">
+        <MappingFragment StoreEntitySet="Contrato">
+          <ScalarProperty Name="idContrato" ColumnName="idContrato" />
+          <ScalarProperty Name="sueldo" ColumnName="sueldo" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="fechaTermino" ColumnName="fechaTermino" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dorsal">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Dorsal">
+        <MappingFragment StoreEntitySet="Dorsal">
+          <ScalarProperty Name="idDorsal" ColumnName="idDorsal" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpleadoEstadio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EmpleadoEstadio">
+        <MappingFragment StoreEntitySet="EmpleadoEstadio">
+          <ScalarProperty Name="idEmpleadoEstadio" ColumnName="idEmpleadoEstadio" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="idEstadio" ColumnName="idEstadio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpleadoTipoEmpleado">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EmpleadoTipoEmpleado">
+        <MappingFragment StoreEntitySet="EmpleadoTipoEmpleado">
+          <ScalarProperty Name="idEmpleadoTipoEmpleado" ColumnName="idEmpleadoTipoEmpleado" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="idTipoEmpleado" ColumnName="idTipoEmpleado" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entrenamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Entrenamiento">
+        <MappingFragment StoreEntitySet="Entrenamiento">
+          <ScalarProperty Name="idEntrenamiento" ColumnName="idEntrenamiento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntrenamientoHerramienta">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EntrenamientoHerramienta">
+        <MappingFragment StoreEntitySet="EntrenamientoHerramienta">
+          <ScalarProperty Name="idEntrenamientoHerramienta" ColumnName="idEntrenamientoHerramienta" />
+          <ScalarProperty Name="idEntrenamiento" ColumnName="idEntrenamiento" />
+          <ScalarProperty Name="idHerramienta" ColumnName="idHerramienta" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntrenamientoMaquina">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EntrenamientoMaquina">
+        <MappingFragment StoreEntitySet="EntrenamientoMaquina">
+          <ScalarProperty Name="idEntrenamientoMaquina" ColumnName="idEntrenamientoMaquina" />
+          <ScalarProperty Name="idEntrenamiento" ColumnName="idEntrenamiento" />
+          <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntrenamientoTipoEntrenamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EntrenamientoTipoEntrenamiento">
+        <MappingFragment StoreEntitySet="EntrenamientoTipoEntrenamiento">
+          <ScalarProperty Name="idEntrenamientoTipoEntrenamiento" ColumnName="idEntrenamientoTipoEntrenamiento" />
+          <ScalarProperty Name="idEntrenamiento" ColumnName="idEntrenamiento" />
+          <ScalarProperty Name="idTipoEntrenamiento" ColumnName="idTipoEntrenamiento" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Equipo">
+        <MappingFragment StoreEntitySet="Equipo">
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idLiga" ColumnName="idLiga" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipoFichaje">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EquipoFichaje">
+        <MappingFragment StoreEntitySet="EquipoFichaje">
+          <ScalarProperty Name="idEquipoFichaje" ColumnName="idEquipoFichaje" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="idFichaje" ColumnName="idFichaje" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipoPrestamoJugador">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EquipoPrestamoJugador">
+        <MappingFragment StoreEntitySet="EquipoPrestamoJugador">
+          <ScalarProperty Name="idEquipoPrestamoJugador" ColumnName="idEquipoPrestamoJugador" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="idPrestamoJugador" ColumnName="idPrestamoJugador" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipoTrofeo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EquipoTrofeo">
+        <MappingFragment StoreEntitySet="EquipoTrofeo">
+          <ScalarProperty Name="idEquipoTrofeo" ColumnName="idEquipoTrofeo" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="idTrofeo" ColumnName="idTrofeo" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estadio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Estadio">
+        <MappingFragment StoreEntitySet="Estadio">
+          <ScalarProperty Name="idEstadio" ColumnName="idEstadio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="capacidad" ColumnName="capacidad" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="numExterior" ColumnName="numExterior" />
+          <ScalarProperty Name="cp" ColumnName="cp" />
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="idCiudad" ColumnName="idCiudad" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estadistica">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Estadistica">
+        <MappingFragment StoreEntitySet="Estadistica">
+          <ScalarProperty Name="idEstadistica" ColumnName="idEstadistica" />
+          <ScalarProperty Name="numGoles" ColumnName="numGoles" />
+          <ScalarProperty Name="numFaltas" ColumnName="numFaltas" />
+          <ScalarProperty Name="tarjetasAmarillas" ColumnName="tarjetasAmarillas" />
+          <ScalarProperty Name="tarjetasRojas" ColumnName="tarjetasRojas" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadisticaTemporada">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.EstadisticaTemporada">
+        <MappingFragment StoreEntitySet="EstadisticaTemporada">
+          <ScalarProperty Name="idEstadisticaTemporada" ColumnName="idEstadisticaTemporada" />
+          <ScalarProperty Name="partidosGanados" ColumnName="partidosGanados" />
+          <ScalarProperty Name="partidosPerdidos" ColumnName="partidosPerdidos" />
+          <ScalarProperty Name="partidosEmpatados" ColumnName="partidosEmpatados" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fichaje">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Fichaje">
+        <MappingFragment StoreEntitySet="Fichaje">
+          <ScalarProperty Name="idFichaje" ColumnName="idFichaje" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gimnasio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Gimnasio">
+        <MappingFragment StoreEntitySet="Gimnasio">
+          <ScalarProperty Name="idGimnasio" ColumnName="idGimnasio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="numExterior" ColumnName="numExterior" />
+          <ScalarProperty Name="cp" ColumnName="cp" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Herramienta">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Herramienta">
+        <MappingFragment StoreEntitySet="Herramienta">
+          <ScalarProperty Name="idHerramienta" ColumnName="idHerramienta" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HerramientaCampo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.HerramientaCampo">
+        <MappingFragment StoreEntitySet="HerramientaCampo">
+          <ScalarProperty Name="idHerramientaCampo" ColumnName="idHerramientaCampo" />
+          <ScalarProperty Name="idHerramienta" ColumnName="idHerramienta" />
+          <ScalarProperty Name="idCampo" ColumnName="idCampo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotel">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="numExterior" ColumnName="numExterior" />
+          <ScalarProperty Name="cp" ColumnName="cp" />
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HotelSucursal">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.HotelSucursal">
+        <MappingFragment StoreEntitySet="HotelSucursal">
+          <ScalarProperty Name="idHotelSucursal" ColumnName="idHotelSucursal" />
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jersey">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Jersey">
+        <MappingFragment StoreEntitySet="Jersey">
+          <ScalarProperty Name="idJersey" ColumnName="idJersey" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="tipografia" ColumnName="tipografia" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jugador">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Jugador">
+        <MappingFragment StoreEntitySet="Jugador">
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="idNacionalidad" ColumnName="idNacionalidad" />
+          <ScalarProperty Name="idManager" ColumnName="idManager" />
+          <ScalarProperty Name="idContrato" ColumnName="idContrato" />
+          <ScalarProperty Name="idDorsal" ColumnName="idDorsal" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JugadorEntrenamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.JugadorEntrenamiento">
+        <MappingFragment StoreEntitySet="JugadorEntrenamiento">
+          <ScalarProperty Name="idJugadorEntrenamiento" ColumnName="idJugadorEntrenamiento" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="idEntrenamiento" ColumnName="idEntrenamiento" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JugadorPartido">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.JugadorPartido">
+        <MappingFragment StoreEntitySet="JugadorPartido">
+          <ScalarProperty Name="idJugadorPartido" ColumnName="idJugadorPartido" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="idPartido" ColumnName="idPartido" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JugadorPremio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.JugadorPremio">
+        <MappingFragment StoreEntitySet="JugadorPremio">
+          <ScalarProperty Name="idJugadorPremio" ColumnName="idJugadorPremio" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="idPremio" ColumnName="idPremio" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Liga">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Liga">
+        <MappingFragment StoreEntitySet="Liga">
+          <ScalarProperty Name="idLiga" ColumnName="idLiga" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manager">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="idManager" ColumnName="idManager" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Maquina">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Maquina">
+        <MappingFragment StoreEntitySet="Maquina">
+          <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaquinaGimnasio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.MaquinaGimnasio">
+        <MappingFragment StoreEntitySet="MaquinaGimnasio">
+          <ScalarProperty Name="idMaquinaGimnasio" ColumnName="idMaquinaGimnasio" />
+          <ScalarProperty Name="idMaquina" ColumnName="idMaquina" />
+          <ScalarProperty Name="idGimnasio" ColumnName="idGimnasio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marca">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Marca">
+        <MappingFragment StoreEntitySet="Marca">
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarcaJersey">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.MarcaJersey">
+        <MappingFragment StoreEntitySet="MarcaJersey">
+          <ScalarProperty Name="idMarcaJersey" ColumnName="idMarcaJersey" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="idJersey" ColumnName="idJersey" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedioTransporte">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.MedioTransporte">
+        <MappingFragment StoreEntitySet="MedioTransporte">
+          <ScalarProperty Name="idMedioTransporte" ColumnName="idMedioTransporte" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Membresia">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Membresia">
+        <MappingFragment StoreEntitySet="Membresia">
+          <ScalarProperty Name="idMembresia" ColumnName="idMembresia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="idPalco" ColumnName="idPalco" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nacionalidad">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Nacionalidad">
+        <MappingFragment StoreEntitySet="Nacionalidad">
+          <ScalarProperty Name="idNacionalidad" ColumnName="idNacionalidad" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Pais">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Palco">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Palco">
+        <MappingFragment StoreEntitySet="Palco">
+          <ScalarProperty Name="idPalco" ColumnName="idPalco" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idEstadio" ColumnName="idEstadio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partido">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Partido">
+        <MappingFragment StoreEntitySet="Partido">
+          <ScalarProperty Name="idPartido" ColumnName="idPartido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idEquipoLocal" ColumnName="idEquipoLocal" />
+          <ScalarProperty Name="idEquipoVisitante" ColumnName="idEquipoVisitante" />
+          <ScalarProperty Name="idEstadio" ColumnName="idEstadio" />
+          <ScalarProperty Name="idEstadistica" ColumnName="idEstadistica" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartidoPatrocinador">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.PartidoPatrocinador">
+        <MappingFragment StoreEntitySet="PartidoPatrocinador">
+          <ScalarProperty Name="idPartidoPatrocinador" ColumnName="idPartidoPatrocinador" />
+          <ScalarProperty Name="idPartido" ColumnName="idPartido" />
+          <ScalarProperty Name="idPatrocinador" ColumnName="idPatrocinador" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartidoTipoPartido">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.PartidoTipoPartido">
+        <MappingFragment StoreEntitySet="PartidoTipoPartido">
+          <ScalarProperty Name="idPartidoTipoPartido" ColumnName="idPartidoTipoPartido" />
+          <ScalarProperty Name="idPartido" ColumnName="idPartido" />
+          <ScalarProperty Name="idTipoPartido" ColumnName="idTipoPartido" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patrocinador">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Patrocinador">
+        <MappingFragment StoreEntitySet="Patrocinador">
+          <ScalarProperty Name="idPatrocinador" ColumnName="idPatrocinador" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posicion">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Posicion">
+        <MappingFragment StoreEntitySet="Posicion">
+          <ScalarProperty Name="idPosicion" ColumnName="idPosicion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PosicionJugador">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.PosicionJugador">
+        <MappingFragment StoreEntitySet="PosicionJugador">
+          <ScalarProperty Name="idPosicionJugador" ColumnName="idPosicionJugador" />
+          <ScalarProperty Name="idPosicion" ColumnName="idPosicion" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Premio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Premio">
+        <MappingFragment StoreEntitySet="Premio">
+          <ScalarProperty Name="idPremio" ColumnName="idPremio" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PremioTipoPremio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.PremioTipoPremio">
+        <MappingFragment StoreEntitySet="PremioTipoPremio">
+          <ScalarProperty Name="idPremioTipoPremio" ColumnName="idPremioTipoPremio" />
+          <ScalarProperty Name="idPremio" ColumnName="idPremio" />
+          <ScalarProperty Name="idTipoPremio" ColumnName="idTipoPremio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Presidente">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Presidente">
+        <MappingFragment StoreEntitySet="Presidente">
+          <ScalarProperty Name="idPresidente" ColumnName="idPresidente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrestamoJugador">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.PrestamoJugador">
+        <MappingFragment StoreEntitySet="PrestamoJugador">
+          <ScalarProperty Name="idPrestamoJugador" ColumnName="idPrestamoJugador" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="fechaTermino" ColumnName="fechaTermino" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sucursal">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Sucursal">
+        <MappingFragment StoreEntitySet="Sucursal">
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Temporada">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Temporada">
+        <MappingFragment StoreEntitySet="Temporada">
+          <ScalarProperty Name="idTemporada" ColumnName="idTemporada" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaInicio" ColumnName="fechaInicio" />
+          <ScalarProperty Name="fechaTermino" ColumnName="fechaTermino" />
+          <ScalarProperty Name="idLiga" ColumnName="idLiga" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TemporadaEstadisticaTemporada">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TemporadaEstadisticaTemporada">
+        <MappingFragment StoreEntitySet="TemporadaEstadisticaTemporada">
+          <ScalarProperty Name="idTemporadaEstadisticaTemporada" ColumnName="idTemporadaEstadisticaTemporada" />
+          <ScalarProperty Name="idTemporada" ColumnName="idTemporada" />
+          <ScalarProperty Name="idEstadisticaTemporada" ColumnName="idEstadisticaTemporada" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoArbitro">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TipoArbitro">
+        <MappingFragment StoreEntitySet="TipoArbitro">
+          <ScalarProperty Name="idTipoArbitro" ColumnName="idTipoArbitro" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAsentamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TipoAsentamiento">
+        <MappingFragment StoreEntitySet="TipoAsentamiento">
+          <ScalarProperty Name="idTipoAsentamiento" ColumnName="idTipoAsentamiento" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEmpleado">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TipoEmpleado">
+        <MappingFragment StoreEntitySet="TipoEmpleado">
+          <ScalarProperty Name="idTipoEmpleado" ColumnName="idTipoEmpleado" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEntrenamiento">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TipoEntrenamiento">
+        <MappingFragment StoreEntitySet="TipoEntrenamiento">
+          <ScalarProperty Name="idTipoEntrenamiento" ColumnName="idTipoEntrenamiento" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPartido">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TipoPartido">
+        <MappingFragment StoreEntitySet="TipoPartido">
+          <ScalarProperty Name="idTipoPartido" ColumnName="idTipoPartido" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPremio">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.TipoPremio">
+        <MappingFragment StoreEntitySet="TipoPremio">
+          <ScalarProperty Name="idTipoPremio" ColumnName="idTipoPremio" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trofeo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Trofeo">
+        <MappingFragment StoreEntitySet="Trofeo">
+          <ScalarProperty Name="idTrofeo" ColumnName="idTrofeo" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Venta">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Venta">
+        <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idEstadio" ColumnName="idEstadio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VentaArticulo">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.VentaArticulo">
+        <MappingFragment StoreEntitySet="VentaArticulo">
+          <ScalarProperty Name="idVentaArticulo" ColumnName="idVentaArticulo" />
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="idArticulo" ColumnName="idArticulo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Viaje">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Viaje">
+        <MappingFragment StoreEntitySet="Viaje">
+          <ScalarProperty Name="idViaje" ColumnName="idViaje" />
+          <ScalarProperty Name="ciudadSalida" ColumnName="ciudadSalida" />
+          <ScalarProperty Name="ciudadDestino" ColumnName="ciudadDestino" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViajeMedioTransporte">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.ViajeMedioTransporte">
+        <MappingFragment StoreEntitySet="ViajeMedioTransporte">
+          <ScalarProperty Name="idViajeMedioTransporte" ColumnName="idViajeMedioTransporte" />
+          <ScalarProperty Name="idViaje" ColumnName="idViaje" />
+          <ScalarProperty Name="idMedioTransporte" ColumnName="idMedioTransporte" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zona">
+      <EntityTypeMapping TypeName="ProyectoFutbolModel.Zona">
+        <MappingFragment StoreEntitySet="Zona">
+          <ScalarProperty Name="idZona" ColumnName="idZona" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
